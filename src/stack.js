@@ -2,7 +2,7 @@ var _ = require('underscore');
 
 let stack = [];
 
-// Lägger ett element överst i stacken, 
+// Lägger ett element överst i stacken,
 exports.push = function (x) {
     stack.push(x);
 };
@@ -14,5 +14,5 @@ exports.pop = function () {
 
 // Returnerar det översta elementet i stacken
 exports.peek = function () {
-    return stack[0]; // Det här är medvetet felaktigt
+    return _.last(stack);
 }
